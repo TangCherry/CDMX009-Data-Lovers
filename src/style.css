@@ -1,0 +1,9 @@
+section {
+    background-size: contain;
+    height: 518px;
+}
+h1 {
+    font-family: Geo;
+    text-align: center;
+    color: aliceblue;
+}
