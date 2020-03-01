@@ -1,9 +1,15 @@
-section {
-    background-size: contain;
-    height: 518px;
+img {
+    height: auto;
+    width: 100%;
 }
 h1 {
     font-family: Geo;
     text-align: center;
-    color: aliceblue;
+    color: black;
+}
+#buttons {
+    text-align: center;
+}
+#types {
+    background-color: crimson;
 }
