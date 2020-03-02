@@ -21,6 +21,10 @@ h1 {
     width: 170px;
     height: 180px;
 }
+#map {
+    width: 170px;
+    height: 180px;
+}
 #types {
     background-color: #E66353;
     height: 150px;
@@ -33,4 +37,6 @@ h3 {
 }
 .buttons {
     text-align: center;
+    width: 100px;
+    height: 100px;
 }
