@@ -2,14 +2,35 @@ img {
     height: auto;
     width: 100%;
 }
+#description {
+    background-color: #121B36;
+}
 h1 {
     font-family: Geo;
     text-align: center;
-    color: black;
+    color:white;
 }
 #buttons {
     text-align: center;
 }
+#kanto {
+    width: 170px;
+    height: 180px;
+}
+#type {
+    width: 170px;
+    height: 180px;
+}
 #types {
-    background-color: crimson;
+    background-color: #E66353;
+    height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h3 {
+    text-align: left;
+    color: white;
+}
+.buttons {
+    text-align: center;
 }
