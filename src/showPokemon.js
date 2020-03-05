@@ -1,26 +1,6 @@
-// import data from './data/injuries/injuries.js';
-// import data from './data/lol/lol.js';
-// import data from './data/patient/patient.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/steam/steam.js';
-// import data from './data/steam/worldbank.js';
-
-const pokemonList = document.querySelector('#pokemonList');
-
-  fetch = ('https://raw.githubusercontent.com/TangCherry/CDMX009-Data-Lovers/master/src/data/pokemon/pokemon.json');
-  .then (response => response.json)
-  .then (json => console.log (json));
-
-  /*request.onload = function() {
-    const pokemons = request.response;
-    populateHeader(pokemons);
-    showHeroes(pokemons);
-  }
-  function showPokemon(jsonObj) {
-    const pokemon = jsonObj['pokemon'];
-
-  for(let i = 0; i < pokemon.length; i++) {
+function showPokemon(pokemons) {
+  const pokemon = pokemons["pokemon"];
+  for (let i = 0; i < pokemon.length; i++) {
     const myArticle = document.createElement('article');
     const pokemonName = document.createElement('h2');
     const height = document.createElement('p');
@@ -34,7 +14,6 @@ const pokemonList = document.querySelector('#pokemonList');
     const number = document.createElement('p');
     const nextEvolution = document.createElement('ul');
     const weaknesses = document.createElement('ul');
-
     pokemonName.textContent = pokemon[i].name;
     height.textContent = "Height: " + pokemon[i].height;
     weight.textContent = "Weight: " + pokemon[i].weight;
@@ -47,21 +26,18 @@ const pokemonList = document.querySelector('#pokemonList');
     number.textContent = "Number: " + pokemon[i].number;
     nextEvolution.textContent = "Evolutions: ";
     weaknesses.textContent = "Weaknesses: ";
-
     const evolutions = pokemon[i].next_evolution;
-    for(let j = 0; j < evolutions.length; j++) {
+    for (let j = 0; j < evolutions.length; j++) {
       const listItem = document.createElement('li');
       listItem.textContent = evolutions[j];
-      myList.appendChild(listItem);
+      nextEvolution.appendChild(listItem);
     }
-
     const weaknesses = pokemon[i].weaknesses;
-    for(let j = 0; j < weaknesses.length; j++) {
+    for (let n = 0; n < weaknesses.length; n++) {
       const listItem = document.createElement('li');
-      listItem.textContent = weaknesses[j];
-      myList.appendChild(listItem);
+      listItem.textContent = weaknesses[n];
+      weaknesses.appendChild(listItem);
     }
-
     myArticle.appendChild(pokemonName);
     myArticle.appendChild(height);
     myArticle.appendChild(weight);
@@ -74,8 +50,6 @@ const pokemonList = document.querySelector('#pokemonList');
     myArticle.appendChild(number);
     myArticle.appendChild(nextEvolution);
     myArticle.appendChild(weaknesses);
-
-    section.appendChild(myArticle);
+    document.getElementById("pokemonCard").appendChild(myArticle);
   }
 }
-*/
