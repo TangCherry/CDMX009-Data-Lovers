@@ -1,6 +1,5 @@
 section {
-    background-size: contain;
-    height: 518px;
+    object-fit: fill;
 }
 h1 {
     font-family: Geo;
