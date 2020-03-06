@@ -1,4 +1,4 @@
-export default {
+const allPokemons = {
   "pokemon": [{
     "id": 1,
     "num": "001",
