@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+section {
+    object-fit: fill;
+=======
 img {
     height: auto;
     width: 100%;
 }
 #description {
     background-color: #121B36;
+>>>>>>> bb87eada8605dc87b119e6d526c0824073f8997e
 }
 h1 {
     font-family: Geo;
