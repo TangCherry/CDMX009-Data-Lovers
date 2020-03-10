@@ -1,7 +1,7 @@
-const allPokemons = {
+export default {
   "pokemon": [{
     "id": 1,
-    "num": "001",
+    "num": "001", 
     "name": "Bulbasaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
     "type": [
@@ -4083,4 +4083,4 @@ const allPokemons = {
       "Dark"
     ]
   }]
-};
+};;
