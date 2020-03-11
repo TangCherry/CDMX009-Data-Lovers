@@ -2,7 +2,12 @@ import data from './data/pokemon/pokemon.js';
 import { showPokemon } from './data.js'; //perra función para mostrar todos los pinches pokemones
 
   //creamos los pinches cosos donde meter la pinche información de los pinches pokemones
-  for(let i = 0; i < pokemons.length; i++) {
+  //const allPokemons = data.pokemon
+  const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
+  for(let i = 0; i <= pokemons.length; i++) {
+  pokemons.forEach(element => {
+    
+  });
     const myArticle = document.createElement('article');
     const pokemonName = document.createElement('h2');
     const height = document.createElement('p');
@@ -17,7 +22,7 @@ import { showPokemon } from './data.js'; //perra función para mostrar todos los
     //const nextEvolution = document.createElement('ul');
     //const weaknesses = document.createElement('ul');
    
-    const evolutions = pokemons[i].next_evolution;
+    /*const evolutions = pokemons[i].next_evolution;
     for(let j = 0; j < evolutions.length; j++) {
       const listItem = document.createElement('li');
       listItem.textContent = evolutions[j];
@@ -29,7 +34,20 @@ import { showPokemon } from './data.js'; //perra función para mostrar todos los
       const listItem = document.createElement('li');
       listItem.textContent = weaknesses[n];
       weaknesses.appendChild(listItem);
-    }
+    } */
+
+    pokemonName.textContent = pokemons[i].name;
+    height.textContent = "Height: " + pokemons[i].height;
+    weight.textContent = "Weight: " + pokemons[i].weight;
+    candyCount.textContent = "Candy count: " + pokemons[i].candy_count;
+    egg.textContent = "Egg: " + pokemons[i].egg;
+    spawnChance.textContent = "Spawn chance: " + pokemons[i].spawn_chance;
+    avgSpawns.textContent = "Avg spawn: " + pokemons[i].avg_spawns;
+    spawnTime.textContent = "Spawn time: " + pokemons[i].spawn_time;
+    multipliers.textContent = "Multipliers: " + pokemons[i].multipliers;
+    number.textContent = "Number: " + pokemons[i].num;
+
+    
     //pegamos los valores de los pinches pokemones en las pinches cosas de lo que creamos en los pinches cosos
     myArticle.appendChild(pokemonName);
     myArticle.appendChild(height);
@@ -46,7 +64,7 @@ import { showPokemon } from './data.js'; //perra función para mostrar todos los
    
     //pegamos todo el desmadre en el section y me la pela el sireno
     document.getElementById("pokemonCard").appendChild(myArticle);
- }
+ } 
 
 
 

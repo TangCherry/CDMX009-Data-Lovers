@@ -17,25 +17,22 @@ import data from "./data/pokemon/pokemon.js";
 //   .then(response => response.json)
 //   .then(json => console.log (json));
 // }
-
 export function showPokemon(pokemon)  { //funcion para buscar pinches pokemones
-  const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
 
   //buscamos el valor de los cosos de los pinches pokemon
-  pokemonName.textContent = pokemon[i].name;
-  height.textContent = "Height: " + pokemon[i].height;
-  weight.textContent = "Weight: " + pokemon[i].weight;
-  candyCount.textContent = "Candy count: " + pokemon[i].candy_count;
-  egg.textContent = "Egg: " + pokemon[i].egg;
-  spawnChance.textContent = "Spawn chance: " + pokemon[i].spawn_chance;
-  avgSpawns.textContent = "Avg spawn: " + pokemon[i].avg_spawn;
-  spawnTime.textContent = "Spawn time: " + pokemon[i].spawn_time;
-  multipliers.textContent = "Multipliers: " + pokemon[i].multipliers;
-  number.textContent = "Number: " + pokemon[i].number;
+/*  pokemonName.textContent = pokemons[i].name;
+  height.textContent = "Height: " + pokemons[i].height;
+  weight.textContent = "Weight: " + pokemons[i].weight;
+  candyCount.textContent = "Candy count: " + pokemons[i].candy_count;
+  egg.textContent = "Egg: " + pokemons[i].egg;
+  spawnChance.textContent = "Spawn chance: " + pokemons[i].spawn_chance;
+  avgSpawns.textContent = "Avg spawn: " + pokemons[i].avg_spawn;
+  spawnTime.textContent = "Spawn time: " + pokemons[i].spawn_time;
+  multipliers.textContent = "Multipliers: " + pokemons[i].multipliers;
+  number.textContent = "Number: " + pokemons[i].number;
   //nextEvolution.textContent = "Evolutions: ";
   //weaknesses.textContent = "Weaknesses: ";
-}
-
+} 
 /*export function filterForType(allPokemon, elementPokemon) { //filtrar por tipo de pokemon
   let filter = [];
       for (let i = 0; i < allPokemon.length; i++){
@@ -44,6 +41,5 @@ export function showPokemon(pokemon)  { //funcion para buscar pinches pokemones
               }
           }
       }
-      return filtered;
-  }
-/*
+      return filtered; */
+  } 
