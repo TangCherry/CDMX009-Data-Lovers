@@ -1,7 +1,18 @@
+import data from './data/pokemon/pokemon.js';
+
+//1.- devuelve otra lista
+export function filterByType(tipo){
+  let filter = data.pokemon.filter(poke=>poke.type.includes(tipo)) 
+  return filtrada
+}
+
+/*export function filterByType (allPokemons, byType) {
+  for (let i = 0; i < allPokemons.lenght; i++) {
+    for (let n = 0; n < allPokemons[i].type.lenght; n++){
+      if (allPokemons[i].type[n] === byType)
 // import data from './data/injuries/injuries.js';
 // import data from './data/lol/lol.js';
 // import data from './data/patient/patient.js';
-import data from "./data/pokemon/pokemon.js";
 // import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/steam/steam.js';
 // import data from './data/steam/worldbank.js';
@@ -17,7 +28,7 @@ import data from "./data/pokemon/pokemon.js";
 //   .then(response => response.json)
 //   .then(json => console.log (json));
 // }
-export function showPokemon(pokemon)  { //funcion para buscar pinches pokemones
+//export function showPokemon(pokemon)  { //funcion para buscar pinches pokemones
 
   //buscamos el valor de los cosos de los pinches pokemon
 /*  pokemonName.textContent = pokemons[i].name;
@@ -32,14 +43,13 @@ export function showPokemon(pokemon)  { //funcion para buscar pinches pokemones
   number.textContent = "Number: " + pokemons[i].number;
   //nextEvolution.textContent = "Evolutions: ";
   //weaknesses.textContent = "Weaknesses: ";
-} 
-/*export function filterForType(allPokemon, elementPokemon) { //filtrar por tipo de pokemon
-  let filter = [];
-      for (let i = 0; i < allPokemon.length; i++){
-          for (let e = 0; e < allPokemon[i].type.length; e++) {
-              if(allPokemon[i].type[e] === elementPokemon){
-              }
-          }
-      }
-      return filtered; */
-  } 
+} */
+/* export function filterByType (allPokemons, byType) {
+  for (let i = 0; i < allPokemons.lenght; i++) {
+    for (let n = 0; n < allPokemons[i].type.lenght; n++){
+      if (allPokemons[i].type[n] === byType)
+    }
+  }
+ } 
+
+*/

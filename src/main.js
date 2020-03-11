@@ -1,9 +1,29 @@
 import data from './data/pokemon/pokemon.js';
-import { showPokemon } from './data.js'; //perra función para mostrar todos los pinches pokemones
+import { showPokemon, filterByType } from './data.js'; //perra función para mostrar todos los pinches pokemones
+
+let pokemonType= document.querySelectorAll('.item-Flex');//un variable donde me trae todos los elementos con esa clase
+for(let i=0; i< pokemonType.length; i++){
+    pokemonType[i].addEventListener('click' , ()=>{
+        document.getElementById('first').style.display='none';
+        document.getElementById('typeSection').style.display='block';
+    });
+}
+
+let cards = document.querySelector('#pokeCards')
+
+let t = "Fire"
+let filtrada = filterByType(t)
+console.log(filtrada)
+filtrada.forEach(poke=>{
+  let div = document.createElement('div')
+  div.innerHTML = " <p>"+poke.name+"</p> "
+  cards.appendChild(div)
+})
+
 
   //creamos los pinches cosos donde meter la pinche información de los pinches pokemones
   //const allPokemons = data.pokemon
-  const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
+  /*const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
   for(let i = 0; i <= pokemons.length; i++) {
   pokemons.forEach(element => {
     
@@ -34,9 +54,9 @@ import { showPokemon } from './data.js'; //perra función para mostrar todos los
       const listItem = document.createElement('li');
       listItem.textContent = weaknesses[n];
       weaknesses.appendChild(listItem);
-    } */
+    }
 
-    pokemonName.textContent = pokemons[i].name;
+    pokemonName.textContent = "Name: " + pokemons[i].name;
     height.textContent = "Height: " + pokemons[i].height;
     weight.textContent = "Weight: " + pokemons[i].weight;
     candyCount.textContent = "Candy count: " + pokemons[i].candy_count;
@@ -65,7 +85,7 @@ import { showPokemon } from './data.js'; //perra función para mostrar todos los
     //pegamos todo el desmadre en el section y me la pela el sireno
     document.getElementById("pokemonCard").appendChild(myArticle);
  } 
-
+*/
 
 
 

@@ -1,47 +1,115 @@
-<<<<<<< HEAD
-section {
-    object-fit: fill;
-=======
+/*
+font-family: 'Geo', sans-serif; titulos
+font-family: 'Source Sans Pro', sans-serif;  textos
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
 img {
-    height: auto;
+    height: 70%;
     width: 100%;
+    margin-top: -9%;
+    position:relative
 }
 #description {
-    background-color: #121B36;
->>>>>>> bb87eada8605dc87b119e6d526c0824073f8997e
+    background: #121B36;
+
+
+}
+#first{
+    display: block;
+}
+
+#typeSection{
+    display: none;
 }
 h1 {
-    font-family: Geo;
-    text-align: center;
+    font-family:'Geo';
     color:white;
-}
-#buttons {
     text-align: center;
+    background: #121B36;
+    position: sticky;
+    margin-top: -9%;
+    padding:2% 0;
+
 }
-#kanto {
-    width: 170px;
-    height: 180px;
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    background-color: white;
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: -2%;
+
 }
-#type {
-    width: 170px;
-    height: 180px;
+
+#menu{
+    text-align: center;
+    width:17%;
+    height: auto;
+    padding: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    font-family: 'Geo', sans-serif;
+
 }
-#map {
-    width: 170px;
-    height: 180px;
+
+a{
+    text-decoration: none;
+    color:#121B36;
 }
-#types {
-    background-color: #E66353;
-    height: 150px;
-    margin-left: 15px;
-    margin-right: 15px;
+
+a:hover {
+  background-color:#C1DBDC;
 }
-h3 {
-    text-align: left;
+
+h2{
+    font-family: 'Geo', sans-serif;
+}
+
+.subtitle{
+    font-family: 'Geo', sans-serif;
     color: white;
+    font-size: 34px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.buttons {
-    text-align: center;
-    width: 100px;
-    height: 100px;
+
+.container1{
+    background-color: #E66353;
+    padding: 20px;
+
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+
+}
+
+.item-flex{
+    width: 108px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.item-flex:hover {
+  color:red;
+}
+
+.container2{
+    background-color: skyblue;
+    height: 200px;
+    padding: 20px;
+
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
 }
