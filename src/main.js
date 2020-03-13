@@ -1,31 +1,34 @@
 import data from './data/pokemon/pokemon.js';
-<<<<<<< HEAD
-=======
+// HEAD
 import { showPokemon, filterByType } from './data.js'; //perra función para mostrar todos los pinches pokemones
 
-let pokemonType= document.querySelectorAll('.item-Flex');//un variable donde me trae todos los elementos con esa clase
-for(let i=0; i< pokemonType.length; i++){
-    pokemonType[i].addEventListener('click' , ()=>{
-        document.getElementById('first').style.display='none';
-        document.getElementById('typeSection').style.display='block';
-    });
-}
-
-let cards = document.querySelector('#pokeCards')
-
-let t = "Fire"
-let filtrada = filterByType(t)
-console.log(filtrada)
-filtrada.forEach(poke=>{
-  let div = document.createElement('div')
-  div.innerHTML = " <p>"+poke.name+"</p> "
-  cards.appendChild(div)
-})
 
 
-  //creamos los pinches cosos donde meter la pinche información de los pinches pokemones
-  //const allPokemons = data.pokemon
-  /*const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
+ let pokeType= document.querySelectorAll('.item-Flex');//un variable donde me trae todos los elementos con esa clase
+ for(let i=0; i< pokeType.length; i++){
+     pokeType[i].addEventListener('click' , ()=>{
+         document.getElementById('first').style.display='none';
+         document.getElementById('typeSection').style.display='block';
+         console.log(pokeType[i])
+     });
+ }
+ //document.getElementById("boton1").onclick = function () {pantalla2(); };
+
+ let cards = document.querySelector('#pokeCards')
+
+ let t = "Fire"
+ let filtrada = filterByType(t)
+ console.log(filtrada)
+ filtrada.forEach(poke=>{
+   let div = document.createElement('div')
+   div.innerHTML = " <p>"+poke.name+"</p> "
+   cards.appendChild(div)
+ })
+
+
+  creamos los pinches cosos donde meter la pinche información de los pinches pokemones
+  const allPokemons = data.pokemon
+  const pokemons = data.pokemon; // constante donde unimos el pinche data con el coso de pokemon
   for(let i = 0; i <= pokemons.length; i++) {
   pokemons.forEach(element => {
     
@@ -44,7 +47,7 @@ filtrada.forEach(poke=>{
     //const nextEvolution = document.createElement('ul');
     //const weaknesses = document.createElement('ul');
    
-    /*const evolutions = pokemons[i].next_evolution;
+    const evolutions = pokemons[i].next_evolution;
     for(let j = 0; j < evolutions.length; j++) {
       const listItem = document.createElement('li');
       listItem.textContent = evolutions[j];
@@ -70,7 +73,7 @@ filtrada.forEach(poke=>{
     number.textContent = "Number: " + pokemons[i].num;
 
     
-    //pegamos los valores de los pinches pokemones en las pinches cosas de lo que creamos en los pinches cosos
+    pegamos los valores de los pinches pokemones en las pinches cosas de lo que creamos en los pinches cosos
     myArticle.appendChild(pokemonName);
     myArticle.appendChild(height);
     myArticle.appendChild(weight);
@@ -81,28 +84,13 @@ filtrada.forEach(poke=>{
     myArticle.appendChild(spawnTime);
     myArticle.appendChild(multipliers);
     myArticle.appendChild(number);
-    //myArticle.appendChild(nextEvolution);
-    //myArticle.appendChild(weaknesses);
+    myArticle.appendChild(nextEvolution);
+    myArticle.appendChild(weaknesses);
    
-    //pegamos todo el desmadre en el section y me la pela el sireno
+    pegamos todo el desmadre en el section y me la pela el sireno
     document.getElementById("pokemonCard").appendChild(myArticle);
  } 
-*/
 
 
 
 
-
-
-
-
->>>>>>> 04ab35a81c3b42cdcda70389a4847a73e3b14c54
-
-
-let pokemonType= document.querySelectorAll('.item-Flex');//un variable donde me trae todos los elementos con esa clase
-for(let i=0; i< pokemonType.length; i++){
-	pokemonType[i].addEventListener('click' , ()=>{
-		document.getElementById('first').style.display='none';
-		document.getElementById('typeSection').style.display='block';
-	});
-}

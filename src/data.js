@@ -1,10 +1,20 @@
 import data from './data/pokemon/pokemon.js';
 
-//1.- devuelve otra lista
-export function filterByType(tipo){
-  let filter = data.pokemon.filter(poke=>poke.type.includes(tipo)) 
-  return filtrada
+export function filterData(elementos){
+  return  data.pokemon.filter(fil=>{
+  for (let i=0; i<fil.type.length; i++){
+    if (fil.type[i]===elementos){
+      return true
+          }
+       }
+      }
+   );
 }
+//1.- devuelve otra lista
+// export function filterByType(Type){
+//   let filter = data.pokemon.filter(poke=>poke.type.includes(type)) 
+//   return filtrada
+// }
 
 /*export function filterByType (allPokemons, byType) {
   for (let i = 0; i < allPokemons.lenght; i++) {
