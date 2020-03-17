@@ -1,13 +1,17 @@
-// import data from './data/injuries/injuries.js';
-// import data from './data/lol/lol.js';
-// import data from './data/patient/patient.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/steam/steam.js';
-// import data from './data/steam/worldbank.js';
+import data from './data/pokemon/pokemon.js';
 
-// esta es una función de ejemplo
+//funcion para mostrar todos los pokemones
+export function showPokemons (pokemon) {
+  let allPokemons = data.pokemon
+  for (let i = 0; i <= allPokemons.length; i++){
+  }
+  return allPokemons;
+} 
 
-export const example = () => {
-  return 'example';
-};
+
+
+//funcion para filtrar por tipo
+export function filterByType(type){
+  let filter = data.pokemon.filter(poke=>poke.type.includes(type)) 
+  return filter;
+}
