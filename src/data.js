@@ -9,6 +9,7 @@ export function showPokemons (pokemon) {
 } 
 
 
+
 //funcion para filtrar por tipo
 export function filterByType(type){
   let filter = data.pokemon.filter(poke=>poke.type.includes(type)) 
