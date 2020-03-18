@@ -37,6 +37,7 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 		let weight = document.createElement ("p");
 		let candyCount = document.createElement ("p");
 		let egg = document.createElement ("p");
+		
 
 				pokemonName.textContent = poke.name;	//buscamos los elementos dentro de la data (nombre, numero, etc)
 				photo.src = poke.img;
@@ -54,17 +55,8 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 				article.appendChild(candyCount);
 				article.appendChild(egg);
 				cards.appendChild(article);
+				
 			})
 		});
 	} 
-
- /* let cards = document.querySelector(".container3") //tambien se usará este modelo de variable para el filtrado, no lo olvides
- let pokemonType= document.querySelectorAll('.item-flex');//un variable donde me trae todos los elementos con esa clase
-//let t = "Fire"                        //aquí debe de ir la clase para elegir el id con el evento
-let filtrada = filterByType(pokemonType)
-//console.log(filtrada)
-filtrada.forEach(poke=>{
-  let article = document.createElement("article")
-  article.innerHTML = "<h2>"+poke.name+"</h2>"
-  cards.appendChild(article)
-}) */
+	
