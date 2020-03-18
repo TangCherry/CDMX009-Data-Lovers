@@ -11,7 +11,7 @@ Realizamos dos prototipos en papel y usamos la técnica del A/B testing en nuest
 Comenzamos a desarrollar nuestras historias de usuario que obtuvimos información a través de un Google Form donde preguntabamos como usuarios, qué les gustaría visualizar en una app de pokémon. 
 De las respuestas que obtuvimos escogimos las tres más votadas y adaptamos el prototipo a estas.
 
- Puedes ver el form en este link [link](https://docs.google.com/forms/d/e/1FAIpQLScHCuzGJ8EpJCUeMCX2jTq_v5fTn-k7VaCgKjEzydMMx7HLqA/viewform?usp=sf_link)
+ Puedes ver el form en este link [form](https://docs.google.com/forms/d/e/1FAIpQLScHCuzGJ8EpJCUeMCX2jTq_v5fTn-k7VaCgKjEzydMMx7HLqA/viewform?usp=sf_link)
 
 ## Historias de Usuario
 
@@ -28,17 +28,17 @@ Para: El usuario puede filtrar a los pokemones por debilidad para saber cual pue
 Quiero: Ver las evoluciones de cada pokemon
 Para: Comparar los cambios entre los pokemones
 
- ![prototipo papel](src/imagenes/prototipo papel.jpg)
+ ![Prototipo en papel](src/imagenes/papel.jpg)
 
 Posterior al desarrollo de las historias de usuario y al prototipado desarrollamos el mockup
 
- ![mockup principal](src/imagenes/mockup principal.png)
+ ![Página principal](src/imagenes/principal.png)
 
- ![mockup segundo](src/imagenes/mockup segundo.png)
+ ![Segunda página](src/imagenes/segundo.png)
 
 Desde el prototipado hasta el mockup siempre pedimos el feedback de nuestras compañeras asegurandonos de que nuestra app cumpliera su propósito, fuera fácil de navegar y cumpliera los principios de diseño.
 
-Y este fue nuestro resultado final: [link](https://tangcherry.github.io/CDMX009-Data-Lovers/index.html)
+Y este fue nuestro resultado final: [Github pages](https://tangcherry.github.io/CDMX009-Data-Lovers/index.html)
 
 ## 3. Objetivos de aprendizaje
 
