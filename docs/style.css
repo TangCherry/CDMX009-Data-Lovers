@@ -6,10 +6,9 @@ body{
     margin: 0;
     padding: 0;
 }
-img {
+.size {
     height: 70%;
     width: 100%;
-	margin-top: -9%;
 	position: relative;
 }
 #description {
@@ -52,8 +51,9 @@ h1 {
 	width:17%;
 	height: auto;
 	padding: 5%;
-	margin-top: 5px;
+	
 	margin-bottom: 5px;
+	
 	
 	font-family: 'Geo', sans-serif;
 	
@@ -67,7 +67,12 @@ a{
 a:hover {
   background-color:#C1DBDC;
 }
-
+p{
+	font-family: 'Source Sans Pro', sans-serif;  
+	text-align: left;
+	font-size: 14px;
+	
+ }
 h2{
 	font-family: 'Geo', sans-serif;
 }
@@ -78,6 +83,14 @@ h2{
 	font-size: 34px;
 	margin-left: 10px;
 	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.subtitle2{
+	font-family: 'Geo', sans-serif;
+	color:  #E66353;
+	font-size: 34px;
+	margin-left: 30px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 }
 
@@ -99,39 +112,64 @@ h2{
 	align-content: center;
 }
 
-.item-flex:hover {
-  color:red;
-}
 
-.container2{
-	background-color: skyblue;
-	height: 2950px;
-	padding: 20px;
-	
+#allPokemon{
+	display: flex;
+	flex-flow: row wrap;
+}
+.container2{	
 	display: flex;
 	flex-flow:row wrap;
 	justify-content: space-between;
 }
 .container3 {
-	background-color:#DFA2ED;
+	display:flex;
+	flex-flow: row wrap;
 }
+
 article {
-	border-color: black;
+	background-color:rgba(238, 238, 236, 0.47);
+	width: auto;
+	height: auto;
+	padding:7px;
+	margin-top: 16px;
+	margin-left: 6px;
+	text-align: center;
+
+	border: 0px ;
+	border-radius: 10px;
+  	padding: 10px;
+  	box-shadow: 5px 8px rgba(30, 30, 46, 0.1);
+	
 }
-footer {
-	background-color: #E66353;
+ #typePokemon{
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-between;
+ }
+
+ footer{
+	 bottom:0;
+	 background-color: #E66353;
+	 width: auto;
+	 margin-top: 20px;
+	 padding-top: 10px;
+	 padding-left: 10px;
+	 padding-bottom: 10px;
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: flex-start;
+ }
+.pikachu{
+	width: 80px;
+	height: auto;
+	
+	
+	
 }
-#arrow { 
-	height: 5%;
-	width: 5%;
-	text-align: left;
-}
-#pikachu {
-	height: 5%;
-	width: 5%;
-	text-align: right;	
-}
-#pokemonType {
-	background-color: #E66353;
+#footertext{
+	color: white;
+	font-family: 'Geo', sans-serif;
+	font-size: 35px;
 }
 

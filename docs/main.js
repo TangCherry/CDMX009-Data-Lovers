@@ -31,38 +31,32 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 		//console.log (filter);
 		let article = document.createElement ("article"); 				//creamos elementos (td=celda de tabla)
 		let pokemonName = document.createElement ("h2");
+		let photo = document.createElement ("img");
 		let number = document.createElement ("p");
 		let height = document.createElement ("p");
 		let weight = document.createElement ("p");
 		let candyCount = document.createElement ("p");
 		let egg = document.createElement ("p");
+		
 
-				pokemonName.textContent = poke.name;					//buscamos los elementos dentro de la data (nombre, numero, etc)
+				pokemonName.textContent = poke.name;	//buscamos los elementos dentro de la data (nombre, numero, etc)
+				photo.src = poke.img;
 				number.textContent = poke.num;
 				height.textContent ="Height: " + poke.height;
 				weight.textContent ="Weight: " + poke.weight;
 				candyCount.textContent ="Candy count: " + poke.candy_count;
 				egg.textContent = "You can find it in... " + poke.egg;
 
-				article.appendChild(pokemonName); 						//unimos valores al articulo con el appendchild
+				article.appendChild(pokemonName); 		//unimos valores al articulo con el appendchild
+				article.appendChild(photo);
 				article.appendChild(number);
 				article.appendChild(height);
 				article.appendChild(weight);
 				article.appendChild(candyCount);
 				article.appendChild(egg);
 				cards.appendChild(article);
+				
 			})
 		});
 	} 
-
- /* let cards = document.querySelector(".container3") //tambien se usará este modelo de variable para el filtrado, no lo olvides
-
- let pokemonType= document.querySelectorAll('.item-flex');//un variable donde me trae todos los elementos con esa clase
-//let t = "Fire"                        //aquí debe de ir la clase para elegir el id con el evento
-let filtrada = filterByType(pokemonType)
-//console.log(filtrada)
-filtrada.forEach(poke=>{
-  let article = document.createElement("article")
-  article.innerHTML = "<h2>"+poke.name+"</h2>"
-  cards.appendChild(article)
-}) */
+	
