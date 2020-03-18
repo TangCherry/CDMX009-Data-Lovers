@@ -37,6 +37,7 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 		let weight = document.createElement ("p");
 		let candyCount = document.createElement ("p");
 		let egg = document.createElement ("p");
+		let weakness = document.createElement("p");
 		
 
 				pokemonName.textContent = poke.name;	//buscamos los elementos dentro de la data (nombre, numero, etc)
@@ -46,6 +47,7 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 				weight.textContent ="Weight: " + poke.weight;
 				candyCount.textContent ="Candy count: " + poke.candy_count;
 				egg.textContent = "You can find it in... " + poke.egg;
+				weakness.textContent = poke.weaknesses;
 
 				article.appendChild(pokemonName); 		//unimos valores al articulo con el appendchild
 				article.appendChild(photo);
@@ -54,6 +56,7 @@ for(let i=0; i< pokemonType.length; i++){ 					//va a contar la longitud de cada
 				article.appendChild(weight);
 				article.appendChild(candyCount);
 				article.appendChild(egg);
+				article.appendChild(weakness);
 				cards.appendChild(article);
 				
 			})
